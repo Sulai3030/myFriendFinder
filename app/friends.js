@@ -1,7 +1,7 @@
 {
-"name" : "",
-"photo": "",
-"scores":[
+"name" ; "",
+"photo"; "",
+"scores";[
     5,
     1,
     4,
@@ -15,8 +15,7 @@
 ]
 }
 
-function myfunction(){
-    var scores = ()
-    var res = str.split
+var myfunction = function(scores, res) {
+    return str.split;
 }
 
