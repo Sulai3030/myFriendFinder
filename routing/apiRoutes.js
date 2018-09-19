@@ -15,10 +15,10 @@ module.exports = function(app) {
   
   // POST method route
   app.post('/api/friends', function (req, res) {
-    res.send('POST request to the homepage')
+    res.send(path.join(___dirname,"../public/home.html"))
   })
  };
 // GET method route
 app.get('/api/friends', function (req, res) {
-  res.send('GET request to the homepage')
-})
+  res.send(path.join(___dirname,"../public/home.html"))
+});
