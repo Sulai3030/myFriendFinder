@@ -8,17 +8,13 @@
 //app.get('/survey,function(req,res){
 //    res.send('')
 //}
+var myFriends = require("../app/friends.js");
 module.exports = function(app) {
     app.get('/api/friends', function (req, res) {
-    res.sendFile(path.join(___dirname,"../public/home.html"))
-  })
-  
+    res.json(myFriends)
+    }) 
   // POST method route
   app.post('/api/friends', function (req, res) {
     res.send(path.join(___dirname,"../public/home.html"))
   })
  };
-// GET method route
-app.get('/api/friends', function (req, res) {
-  res.send(path.join(___dirname,"../public/home.html"))
-});

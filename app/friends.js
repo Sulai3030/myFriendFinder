@@ -1,7 +1,8 @@
-{
-"name" ; "",
-"photo"; "",
-"scores";[
+var myFriends =
+[{
+name : "",
+photo: "",
+scores:[
     5,
     1,
     4,
@@ -13,9 +14,11 @@
     4,
     1
 ]
-}
+}];
 
-var myfunction = function(scores, res) {
-    return str.split;
-}
+
+  module.exports = myFriends;
+//var myfunction = function(scores, res) {
+//    return str.split;
+//}
 
