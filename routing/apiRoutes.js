@@ -15,6 +15,22 @@ module.exports = function(app) {
     }) 
   // POST method route
   app.post('/api/friends', function (req, res) {
-    res.send(path.join(___dirname,"../public/home.html"))
+    console.log(JSON.stringify(req.body))
+    var smallestDiffernce=100
+    var totalDifference=0
+    var closestFriendIndex=0
+    var a;  
+    for (a = 0; a < myFriends.length; a++) {
+      var b;
+      totalDifference = 0
+      for (b = 0; b < 10; b++) { 
+        totalDifference += Math.abs(myFriends[a].scores[b]-req.body.scores[b])
+      }
+      if (totalDifference < smallestDifference){
+        smallestDiffernce = totalDifference
+        closestFriendIndex = a
+      }
+    }res.json (myFriends [closestFriendIndex])
+
   })
  };
