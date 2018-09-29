@@ -56,6 +56,3 @@ scores:[
 //    return str.split;
 //}
 
-var results = function(scores, res){
-  return str.split
-}
